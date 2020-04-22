@@ -1,0 +1,4 @@
+[build]
+base = "devit/"
+publish = "build/"
+command = "npm run start"
