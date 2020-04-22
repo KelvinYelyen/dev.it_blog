@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/devit-blog-app/static/js/main.289f94ef.chunk.js",
+    "main.js.map": "/devit-blog-app/static/js/main.289f94ef.chunk.js.map",
+    "runtime-main.js": "/devit-blog-app/static/js/runtime-main.34eb7566.js",
+    "runtime-main.js.map": "/devit-blog-app/static/js/runtime-main.34eb7566.js.map",
+    "static/js/2.e392f618.chunk.js": "/devit-blog-app/static/js/2.e392f618.chunk.js",
+    "static/js/2.e392f618.chunk.js.map": "/devit-blog-app/static/js/2.e392f618.chunk.js.map",
+    "index.html": "/devit-blog-app/index.html",
+    "precache-manifest.1386080e02baf2abe9daaf607265d13e.js": "/devit-blog-app/precache-manifest.1386080e02baf2abe9daaf607265d13e.js",
+    "service-worker.js": "/devit-blog-app/service-worker.js",
+    "static/js/2.e392f618.chunk.js.LICENSE.txt": "/devit-blog-app/static/js/2.e392f618.chunk.js.LICENSE.txt",
+    "static/media/Bg_1.jpg": "/devit-blog-app/static/media/Bg_1.53403f31.jpg",
+    "static/media/Image_1.jpg": "/devit-blog-app/static/media/Image_1.36a6226e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.34eb7566.js",
+    "static/js/2.e392f618.chunk.js",
+    "static/js/main.289f94ef.chunk.js"
+  ]
+}
