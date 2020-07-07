@@ -1,8 +1,8 @@
 ---
-title: What you think you become.
+title: Celebrate small wins!.
 author: Kelvin Yelyen
-date: April 05, 2020
-thumbnail: /assets/images/Image_1.jpg
+date: July 23, 2020
+thumbnail: /assets/images/image_4.jpg
 category: Life
 ---
 

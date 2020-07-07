@@ -2,7 +2,7 @@
 title: Patience.
 author: Grey Morales
 date: April 12, 2020
-thumbnail: ../images/image_2.jpg
+thumbnail: /assets/images/image_2.jpg
 category: Life
 ---
 

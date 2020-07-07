@@ -2,7 +2,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import postlist from '../posts.json';
-import Image_1 from '../images/Image_1.jpg';
+import Bg_1 from './bgd-01-01.svg';
 import Markdown from "react-markdown";
 
 
@@ -20,6 +20,7 @@ const Post = (props) => {
           fetchedPost.author = post.author ? post.author : "No author given";
           fetchedPost.content = post.content ? post.content : "No content given";
           fetchedPost.category = post.category ? post.category : "No content given";
+          fetchedPost.thumbnail = post.thumbnail;
           postExists = true;
       }
   });
@@ -28,13 +29,13 @@ const Post = (props) => {
   }
   return (
       <div>
-          <section class="hero-wrap hero-wrap-2 js-fullheight" style={{height: '736px',backgroundPosition:'50% 49px'}} data-stellar-background-ratio="0.5">
+          <section class="js-fullheight" style={{backgroundImage:`url(${Bg_1})`,height: '736px',backgroundPosition:'50% 49px'}} data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
               <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center" style={{height: '736px'}}>
                 <div class="col-md-9 ftco-animate fadeInUp ftco-animated pb-5 text-center">
-                  <h1 class="mb-3 bread" style={{fontSize:'90px'}}>{fetchedPost.title}</h1>
-                  <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog Single <i class="ion-ios-arrow-forward"></i></span></p>
+                  <h1 class="mb-3 bread" style={{fontSize:'90px', color:'black'}}>{fetchedPost.title}</h1>
+                  <p class="breadcrumbs"><span class="mr-2"><a style={{color:'black'}} href="index.html">Home <i style={{color:'black'}} class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a style={{color:'black'}} href="blog.html">Blog <i style={{color:'black'}} class="ion-ios-arrow-forward"></i></a></span> <span style={{color:'black'}}>Blog Single <i class="ion-ios-arrow-forward"></i></span></p>
                 </div>
               </div>
             </div>
@@ -45,7 +46,7 @@ const Post = (props) => {
                   <div class="row">
                     <div class="col-lg-8 ftco-animate fadeInUp ftco-animated">
                     	<p class="mb-5">
-                        <img src={Image_1} class="img-fluid"/>
+                        <img src={fetchedPost.thumbnail} class="img-fluid"/>
                       </p>
                       <span class="subheading">{fetchedPost.category}</span>
                       <h2 class="mb-3">{fetchedPost.title}</h2>
@@ -57,7 +58,7 @@ const Post = (props) => {
 
                       <div class="about-author d-flex p-4 bg-light">
                         <div class="bio mr-5">
-                          <img src={Image_1} alt="Image placeholder" class="img-fluid mb-4"/>
+                          <img src={fetchedPost.thumbnail} alt="Image placeholder" class="img-fluid mb-4"/>
                         </div>
                         <div class="desc">
                           <h3>By {fetchedPost.author}</h3>

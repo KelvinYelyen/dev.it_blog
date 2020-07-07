@@ -12,8 +12,8 @@ class Footer extends Component {
                 <div class="row mb-5">
                   <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                      <h2 class="logo"><a href="#">/dev<span>it</span>.</a></h2>
-                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <h2 class="logo"><a href="#">/dev.<span>it</span>.</a></h2>
+                      <p>Lets Develop together...</p>
                       <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                         <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-instagram"></span></a></li>
                         <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -47,7 +47,7 @@ class Footer extends Component {
                 </div>
                 <div class="row">
                   <div class="col-md-12 text-center">
-                    <p>Copyright {new Date().getFullYear()} <script>document.write(new Date().getFullYear());</script> All rights reserved <a href="#" target="_blank">/devit</a></p>
+                    <p>Copyright {new Date().getFullYear()} <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank">Made by Kheltech</a></p>
                   </div>
                 </div>
               </div>

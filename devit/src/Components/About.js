@@ -1,18 +1,18 @@
 /*jshint esversion: 6*/
 import React, {Component} from 'react';
-import Bg_1 from '../images/Bg_1.jpg';
+import Bg_1 from './bgd-01-01.svg';
 
 class About extends Component {
   render(){
     return(
       <div>
-          <section class="hero-wrap js-fullheight" style={{backgroundImage:'url(${Bg_1})', height: '736px',backgroundPosition:'50% 49px'}} data-stellar-background-ratio="0.5">
+          <section class="js-fullheight" style={{backgroundImage:`url(${Bg_1})`, height: '700px',backgroundPosition:'50% 49px'}} data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
               <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center" style={{height: '736px'}}>
                 <div class="col-md-9 ftco-animate fadeInUp ftco-animated pb-5 text-center">
-                  <h1 class="mb-3 bread">About</h1>
-                  <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About <i class="ion-ios-arrow-forward"></i></span></p>
+                  <h1 style={{color:'black'}} class="mb-3 bread">About</h1>
+                  <p class="breadcrumbs"><span class="mr-2"><a style={{color:'black'}} href="index.html">Home <i style={{color:'black'}} class="ion-ios-arrow-forward"></i></a></span> <span style={{color:'black'}}>About <i style={{color:'black'}} class="ion-ios-arrow-forward"></i></span></p>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ class About extends Component {
               </div>
             </div>
           </section>
-        
+
       </div>
     );
   }

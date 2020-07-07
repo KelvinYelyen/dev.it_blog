@@ -58,10 +58,10 @@ const getPosts = () => {
           postlist.push(post);
           if (i === files.length-1) {
               const sortedList = postlist.sort((a, b) => {
-                  return a.id > b.id ? 1 : -1;
+                  return a.id < b.id ? 1 : -1;
               });
               let data = JSON.stringify(sortedList);
-              fs.writeFileSync("src/posts.json", data);
+              fs.writeFileSync("../src/posts.json", data);
           }
         });
       });

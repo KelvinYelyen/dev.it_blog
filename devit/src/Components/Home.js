@@ -1,26 +1,26 @@
 /*jshint esversion: 6 */
 import React, {Component} from 'react';
 import Card from './Card.js';
-import Bg_1 from '../images/Bg_1.jpg';
+import Bg_1 from './bgd-01-01.svg';
 
 class Home extends Component {
   render(){
     return(
       <div>
-      <div class="hero-wrap js-fullheight" style={{backgroundImage:'url(${Bg_1})', height: '736px',backgroundPosition:'50% 50%'}} data-stellar-background-ratio="0.5">
+      <div class="js-fullheight" style={{backgroundImage:`url(${Bg_1})`, height:'736px', backgroundPosition:'50% 50%'}} data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true" style={{height: '736px'}}>
             <div class="col-md-12 ftco-animate fadeInUp ftco-animated">
              <h2 class="subheading">Hello! Welcome to</h2>
-             <h1 class="mb-4 mb-md-0">/devit blog</h1>
+             <h1 class="mb-4 mb-md-0" style={{color:'black',opacity: '100%'}}>/dev.it blog</h1>
              <div class="row">
                <div class="col-md-7">
-                 <div class="text">
-                   <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                 <div class="text" >
+                   <p style={{color:'black'}}>Dev.it or develop it is a career slash lifestyle blog for programmers, digital creators and anyone who likes to share something he/she has developed in the various aspects of life. To inspire and to develop us as human beings, as we learn from each other.</p>
                    <div class="mouse">
                      <a href="#" class="mouse-icon">
-                       <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+                       <div class="mouse-wheel"><span style={{color:'black'}}  class="ion-ios-arrow-round-down"></span></div>
                      </a>
                    </div>
                  </div>
@@ -39,16 +39,8 @@ class Home extends Component {
 
                <div class="row mt-5">
                 <div class="col text-center">
-                  <div class="block-27">
-                    <ul>
-                      <li><a href="#">&lt;</a></li>
-                      <li class="active"><span>1</span></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">&gt;</a></li>
-                    </ul>
+                  <div>
+                      <a style={{boxSizing:'border-box'}} href="#">Load more...</a>
                   </div>
                 </div>
               </div>

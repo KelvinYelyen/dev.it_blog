@@ -2,7 +2,7 @@
 title: Programming is an art.
 author: Asha Trace
 date: April 01, 2020
-thumbnail: ../images/image_3.jpg
+thumbnail: /assets/images/image_3.jpg
 category: Programming
 ---
 

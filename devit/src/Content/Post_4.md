@@ -2,7 +2,7 @@
 title: What you imagine is real.
 author: Grey Trace
 date: April 27, 2020
-thumbnail: ../images/image_4.jpg
+thumbnail: /assets/images/image_8.jpg
 category: Content Creation
 ---
 

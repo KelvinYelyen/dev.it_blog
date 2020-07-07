@@ -17,12 +17,12 @@ class Card extends Component{
                 <div class="case">
                   <div class="row">
                     <div class="col-md-6 col-lg-6 col-xl-8 d-flex">
-                        {post.thumbnail &&  <Link to={`/Post/${post.id}`}><a><img class="img-responsive w-100 mb-3 mb-md-0" src={post.thumbnail} alt="Broken Image"/></a></Link> }
-
+                        {post.thumbnail && <Link to={`/Post/${post.id}`}><a><img class="img-responsive w-100 mb-3 mb-md-0" src={post.thumbnail} alt="Broken Image"/></a></Link>}
+                        {console.log(post.thumbnail)}
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-4 d-flex">
                       <div class="text w-100 pl-md-3">
-                        <span class="subheading">{post.category}</span>
+                        <span style={{ color:'rgb(255,211,105)' }}class="subheading">{post.category}</span>
                         <h2><Link to={`/Post/${post.id}`}>{post.title}</Link></h2>
                         <a><Markdown class="mr-7" source={excerptList[i]} escapeHtml={false}/></a>
                         <ul class="media-social list-unstyled">

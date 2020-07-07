@@ -1,6 +1,7 @@
 /*jshint esversion:6 */
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import Bg_1 from './bgd-01-01.svg';
 
 class Contact extends Component{
   render(){
@@ -9,13 +10,13 @@ class Contact extends Component{
     };
     return(
       <div>
-      <section class="hero-wrap hero-wrap-2 js-fullheight" style={{height: '736px',backgroundPosition:'50% 49px'}} data-stellar-background-ratio="0.5">
+      <section class="hero-wrap-2 js-fullheight" style={{backgroundImage:`url(${Bg_1})`,height: '736px',backgroundPosition:'50% 49px'}} data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center" style={{height: '736px'}}>
             <div class="col-md-9 ftco-animate fadeInUp ftco-animated pb-5 text-center">
-              <h1 class="mb-3 bread">Contact us</h1>
-              <p class="breadcrumbs"><span class="mr-2"><Link to="/"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></Link></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+              <h1 style={{color:'black'}} class="mb-3 bread">Contact us</h1>
+              <p class="breadcrumbs"><span class="mr-2"><Link to="/"><a style={{color:'black'}} href="index.html">Home <i style={{color:'black'}} class="ion-ios-arrow-forward"></i></a></Link></span> <span style={{color:'black'}}>Contact <i style={{color:'black'}} class="ion-ios-arrow-forward"></i></span></p>
             </div>
           </div>
         </div>
@@ -29,13 +30,16 @@ class Contact extends Component{
             </div>
             <div class="w-100"></div>
             <div class="col-md-3">
+              <p><span>Address:</span> 198 West 21th Street, Suite 721 Queens Valley, Wa 10016</p>
+            </div>
+            <div class="col-md-3">
               <p><span>Phone:</span> <a href="tel://1234567920">+233 050 0399 971</a></p>
             </div>
             <div class="col-md-3">
               <p><span>Email:</span><a href="mailto:kevinyelyen@gmail.com">kevinyelyen@gmail.com</a></p>
             </div>
             <div class="col-md-3">
-              <p><span>Website</span><a href="#">/devit.com</a></p>
+              <p><span>Website:</span><a href="#">devit.com</a></p>
             </div>
           </div>
           <div class="row block-9 no-gutters">
@@ -66,7 +70,7 @@ class Contact extends Component{
           </div>
         </div>
       </section>
-      
+
       </div>
     );
   }
