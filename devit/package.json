@@ -2,7 +2,7 @@
   "name": "devit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://192.168.43.193:5000",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "node public/server.js && react-scripts build",
+    "build": "node public/server.js && react-scripts build && serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node public/server.js"
